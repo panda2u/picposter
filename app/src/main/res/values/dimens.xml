@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="cardview_height_px">64px</dimen>
+    <dimen name="corner_radius_px">32px</dimen>
+    <dimen name="negative_radius_px">-32px</dimen>
+
+    <dimen name="cardview_height">40dp</dimen>
+    <dimen name="negative_height">-40dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
+    <dimen name="negative_radius">-20dp</dimen>
+
+    <dimen name="button_padding_hidden">28dp</dimen>
+    <dimen name="button_padding_shown">12dp</dimen>
+
+    <dimen name="preview_halfspacing">10dp</dimen>
+
+    <dimen name="button_spacing_medium">14dp</dimen>
+
+    <dimen name="drawable_padding">6dp</dimen>
+    <dimen name="group_margin_top">20dp</dimen>
+
+    <dimen name="edittext_height">180dp</dimen>
+    <dimen name="listview_width">180dp</dimen>
+
+    <dimen name="messagegroup_margin_top">80dp</dimen>
+</resources>

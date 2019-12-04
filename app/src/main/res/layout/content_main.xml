@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_sky"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_main">
+
+<RelativeLayout
+    android:id="@+id/main_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/card_group_VK"
+        style="@style/CardGroup">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name_VK"
+            style="@style/SocialCard"
+            app:cardBackgroundColor="@color/vk_share_top_blue_color"
+            android:visibility="visible" >
+
+        <Button
+            android:id="@+id/button_name_VK"
+            style="@style/SocialButton.Name"
+    android:paddingStart="@dimen/button_spacing_medium"
+    android:paddingEnd="@dimen/drawable_padding"
+
+            android:text="@string/text_not_auth" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image_VK"
+            style="@style/SocialCard.Image"
+            app:cardBackgroundColor="@color/vk_share_top_blue_color"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button_image_VK"
+                style="@style/SocialButton.Image"
+                android:paddingEnd="@dimen/corner_radius"
+
+                android:text="@string/text_image_VK" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+        <!--/card_group_VK-->
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button_login_FB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/card_group_FB"
+        style="@style/CardGroup"
+        android:layout_below="@id/card_group_VK">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name_FB"
+            style="@style/SocialCard"
+            app:cardBackgroundColor="@color/com_facebook_button_background_color"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button_name_FB"
+                style="@style/SocialButton.Name"
+                android:drawableStart="@drawable/com_facebook_button_icon"
+                android:text="@string/text_not_auth" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image_FB"
+            style="@style/SocialCard.Image"
+            app:cardBackgroundColor="@color/com_facebook_button_background_color"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/button_image_FB"
+                style="@style/SocialButton.Image"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/messenger_bubble_large_white"
+                android:text="@string/text_fb_share"/>
+        </androidx.cardview.widget.CardView>
+        <!--/FB_group-->
+
+    </RelativeLayout>
+
+    <!--ODNOKLASSNIKI-->
+    <RelativeLayout
+        android:id="@+id/card_group_OK"
+        style="@style/CardGroup"
+        android:layout_below="@id/card_group_FB" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name_OK"
+            style="@style/SocialCard"
+            app:cardBackgroundColor="#EE8208"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button_name_OK"
+                style="@style/SocialButton.Name"
+            android:drawablePadding="0dp"
+            android:paddingStart="@dimen/corner_radius"
+                android:text="@string/text_name_OK" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image_OK"
+            style="@style/SocialCard.Image"
+            app:cardBackgroundColor="#EE8208"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button_image_OK"
+                style="@style/SocialButton.Image"
+
+                android:text="@string/text_image_OK" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <!--/ODNOKLASSNIKI-->
+
+    <RelativeLayout
+        android:id="@+id/sending_message_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/messagegroup_margin_top"
+
+    android:paddingBottom="@dimen/group_margin_top"
+        android:background="@color/yellow_shady"
+        android:visibility="invisible">
+
+        <androidx.cardview.widget.CardView
+            style="@style/SocialCard"
+            android:layout_alignEnd="@id/listview_friends"
+            android:layout_alignTop="@id/listview_friends"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="@dimen/negative_radius">
+
+            <Button
+                android:id="@+id/button_friend"
+                style="@style/SocialButton.Image"
+                android:text="@string/text_friend_VK"
+                android:background="#E0005A"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/ic_custom_add_friend"
+            />
+        </androidx.cardview.widget.CardView>
+
+        <ListView
+            android:id="@+id/listview_friends"
+            android:layout_width="@dimen/listview_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cardview_height"
+
+            android:layout_below="@id/edittext"
+            android:layout_alignParentEnd="true"
+            android:background="@color/green_shady"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:gravity="top|start"
+            android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
+            android:minLines="8"
+            android:maxLines="8"
+            android:hint="@string/edittext_hint"
+            android:paddingTop="@dimen/corner_radius"
+            android:paddingStart="@dimen/corner_radius"
+            android:paddingEnd="@dimen/corner_radius"
+
+            android:textSize="16sp"
+            android:textColor="@color/green_grey"
+            android:background="@color/yellow_sandy"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/thumbnail_0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/group_margin_top"
+
+            android:layout_marginStart="@dimen/corner_radius"
+            android:layout_alignStart="@id/edittext"
+            android:layout_below="@id/edittext"
+            android:background="@color/green_deeper"
+            android:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/edittext"
+            android:layout_alignEnd="@id/edittext"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            app:srcCompat="@drawable/ic_custom_send_message"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-30dp"
+        android:padding="16dp"
+        android:text="@string/text_welcome"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="visible"  />
+
+</FrameLayout>

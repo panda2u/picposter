@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Poster</string>
+    <integer name="zero">0</integer>
+    <integer name="twenty">20</integer>
+    <integer name="twenty_negative">-20</integer>
+
+    <integer name="com_vk_sdk_AppId">YOUR_VK_APP_ID</integer>
+    <integer name="requestVK">200</integer>
+    <integer name="requestFB">201</integer>
+    <integer name="requestOK">202</integer>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="OK_APP_ID">YOUR_OK_APP_ID</string>
+    <string name="OK_PUBLIC_KEY">YOUR_OK_PUBLIC_KEY</string>
+    <string name="OK_APP_KEY">YOUR_OK_KEY</string>
+    <string name="OK_HOST">okYOUR_OK_APP_ID</string>
+    <string name="OK_REDIRECT_URI">okauth://okYOUR_OK_APP_ID</string>
+
+    <string name="text_name_OK">Войти</string>
+    <string name="text_image_OK">Добавить\nФото...</string>
+
+    <string name="text_welcome">Please log in to continue</string>
+    <string name="text_fb_share">\ Share\ </string>
+    <string name="text_not_auth">\ Log in\ </string>
+    <string name="text_dialog_logout">Log out</string>
+    <string name="text_image_VK">Добавить\nФото...</string>
+    <string name="text_friend_VK">Tag\nfriend</string>
+    <string name="edittext_hint">Введите сообщение</string>
+
+    <string name="no_valid_token">no valid token</string>
+
+    <string name="FB">\ \@\ Facebook</string>
+    <string name="VK">\ \@\ Vkontakte</string>
+    <string name="OK">\ \@\ Odnoklassniki</string>
+
+    <string name="response">response</string>
+    <string name="firstname">first_name</string>
+    <string name="lastname">last_name</string>
+    <string name="photo_id">photo_id</string>
+    <string name="token">token</string>
+    <string name="filename">filename</string>
+    <string name="filesize">filesize</string>
+    <string name="attachment">attachment</string>
+    <string name="photos">photos</string>
+    <string name="upload_url">upload_url</string>
+    <string name="log">log</string>
+    <string name="button_name">button_name_</string>
+    <string name="_id">id</string>
+    <string name="please_login">Please log in to continue</string>
+    <string name="logging_in">logging in...</string>
+    <string name="logged_out">\nlogged out</string>
+    <string name="authorized">Authorized as\ \ </string>
+    <string name="logged_in_as">You are currently logged in as\n</string>
+    <string name="ask_logout">\nLog out of service?</string>
+    <string name="cancel">Cancel</string>
+    <string name="newline">\n</string>
+    <string name="underline">____</string>
+    <string name="cache">/cache/</string>
+    <string name="logfile_name">log.txt</string>
+    <string name="comment">comment</string>
+    <string name="sent">This message has been sent with\ \ </string>
+
+    <string name="text_authorized">You are now Authorized</string>
+</resources>

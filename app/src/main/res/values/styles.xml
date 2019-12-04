@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<style name="CardGroup">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/transparent</item>
+    <item name="android:layout_marginTop">@dimen/group_margin_top</item>
+    <item name="android:layout_marginStart">@dimen/negative_radius</item>
+    <item name="android:layout_marginEnd">@dimen/negative_radius</item>
+</style>
+
+<style name="SocialCard">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/cardview_height</item>
+    <item name="android:layout_gravity">center|start</item>
+    <item name="cardCornerRadius">@dimen/corner_radius</item>
+    <item name="cardPreventCornerOverlap">true</item>
+</style>
+
+<style name="SocialCard.Image">
+    <item name="android:layout_gravity">center|end</item>
+    <item name="android:layout_alignParentEnd">true</item>
+</style>
+
+<style name="SocialButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_gravity">center|start</item>
+
+    <item name="android:maxLines">1</item>
+
+    <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:elegantTextHeight">false</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:background">@color/transparent</item>
+</style>
+
+<style name="SocialButton.Name">
+    <item name="android:paddingStart">@dimen/button_padding_hidden</item>
+    <item name="android:paddingEnd">@dimen/button_padding_shown</item>
+</style>
+
+<style name="SocialButton.Image">
+    <item name="android:paddingStart">@dimen/button_padding_shown</item>
+    <item name="android:paddingEnd">@dimen/button_padding_hidden</item>
+    <item name="android:maxLines">2</item>
+    <item name="android:textScaleX">.95</item>
+    <item name="android:textSize">14sp</item>
+</style>
+
+
+
+<style name="LargeTheme" parent="AppTheme.NoActionBar"></style>
+<style name="CardGroup_L" parent="LargeTheme">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@color/transparent</item>
+
+    <item name="android:layout_marginTop">@dimen/corner_radius</item>
+    <item name="android:layout_marginStart">@dimen/negative_radius</item>
+    <item name="android:layout_marginEnd">@dimen/negative_radius</item>
+</style>
+
+<style name="SocialCard_L" parent="LargeTheme">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_gravity">center|start</item>
+    <item name="cardPreventCornerOverlap">true</item>
+
+    <item name="android:layout_height">@dimen/cardview_height</item>
+    <item name="cardCornerRadius">@dimen/corner_radius</item>
+</style>
+
+</resources>
